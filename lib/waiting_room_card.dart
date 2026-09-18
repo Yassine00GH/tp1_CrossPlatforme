@@ -1,6 +1,6 @@
 // lib/waiting_room_card.dart
 import 'package:flutter/material.dart';
-
+import 'package:waiting_room_app/waiting_room_timestamp.dart';
 class WaitingRoomCard extends StatelessWidget {
   final String name;
   const WaitingRoomCard({super.key, required this.name});
@@ -22,6 +22,8 @@ class WaitingRoomCard extends StatelessWidget {
               name,
               style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
+            const SizedBox(height: 10),
+            const WaitingRoomTimestamp(),
           ],
         ),
       ),
